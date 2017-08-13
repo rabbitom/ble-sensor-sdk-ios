@@ -7,7 +7,7 @@
 //
 
 #import "SensorFeature.h"
-#import "CoolUtility.h"
+#import "BLESDK/BLESDK.h"
 
 @interface SensorFeature()
 

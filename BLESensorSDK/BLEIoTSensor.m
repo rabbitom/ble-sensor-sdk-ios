@@ -8,7 +8,6 @@
 
 #import "BLEIoTSensor.h"
 #import "SensorFeature.h"
-#import "BLEDevicesManager.h"
 
 #define DEVICE_FEATURES @"Device Features"
 #define CONTROL_POINT   @"Control Point"
@@ -27,11 +26,6 @@
 @end
 
 @implementation BLEIoTSensor
-
-+ (void)setupDevicesManager: (BLEDevicesManager*)devicesManager {
-    CBUUID *mainServiceUUID = [CBUUID UUIDWithString:@"2EA7"];
-    [devicesManager addDeviceClass:[BLEIoTSensor class] byMainService:mainServiceUUID];
-}
 
 static NSDictionary* _services;
 

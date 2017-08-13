@@ -16,8 +16,6 @@ FOUNDATION_EXPORT const unsigned char BLESensorSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BLESensorSDK/PublicHeader.h>
 
-#import <BLESensorSDK/BLEDevicesManager.h>
-#import <BLESensorSDK/BLEDevice.h>
+#import <BLESDK/BLESDK.h>
 #import <BLESensorSDK/BLEIoTSensor.h>
 #import <BLESensorSDK/SensorFeature.h>
-#import <BLESensorSDK/CoolUtility.h>

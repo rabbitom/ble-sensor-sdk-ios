@@ -6,14 +6,11 @@
 //  Copyright © 2016年 CoolTools. All rights reserved.
 //
 
-#import "BLEDevice.h"
-#import "BLEDevicesManager.h"
+#import "BLESDK/BLESDK.h"
 
 @interface BLEIoTSensor : BLEDevice
 
 @property (readonly) NSDictionary* features;
 @property (readonly) BOOL isSensorOn;
-
-+ (void)setupDevicesManager: (BLEDevicesManager*)devicesManager;
 
 @end
