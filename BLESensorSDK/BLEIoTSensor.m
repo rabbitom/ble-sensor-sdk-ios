@@ -9,9 +9,9 @@
 #import "BLEIoTSensor.h"
 #import "SensorFeature.h"
 
-#define DEVICE_FEATURES @"Device Features"
-#define CONTROL_POINT   @"Control Point"
-#define COMMAND_REPLY   @"Command Reply"
+#define DEVICE_FEATURES @"info"
+#define CONTROL_POINT   @"control_send"
+#define COMMAND_REPLY   @"control_receive"
 
 @interface BLEIoTSensor()
 {
@@ -26,33 +26,6 @@
 @end
 
 @implementation BLEIoTSensor
-
-static NSDictionary* _services;
-
-+ (NSDictionary *) services {
-    if(_services == nil)
-        _services = @{[CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402400"] : @"Dialog Wearable"};
-    return _services;
-}
-
-static NSDictionary* _characteristics = nil;
-
-+ (NSDictionary *)characteristics {
-    if(_characteristics == nil)
-        _characteristics = @{//CBUUID:String
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402401"] : @"ACCELEROMETER",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402402"] : @"GYROSCOPE",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402403"] : @"MAGNETOMETER",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402404"] : @"BAROMETER",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402405"] : @"HUMIDITY",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402406"] : @"TEMPERATURE",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402407"] : @"SFL",//notify
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402408"] : DEVICE_FEATURES,//read
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f402409"] : CONTROL_POINT,//write
-                             [CBUUID UUIDWithString:@"2ea78970-7d44-44bb-b097-26183f40240a"] : COMMAND_REPLY//notify
-                             };
-    return _characteristics;
-}
 
 //CommandId
 enum : Byte {
