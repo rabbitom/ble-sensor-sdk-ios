@@ -60,9 +60,9 @@
 			children = (
 				E22FCECD1DC9EFB9008161B8 /* BLEIoTSensor.h */,
 				E22FCECE1DC9EFB9008161B8 /* BLEIoTSensor.m */,
+				E22FCEB41DC9EDD3008161B8 /* BLESensorSDK.h */,
 				E22FCECF1DC9EFB9008161B8 /* SensorFeature.h */,
 				E22FCED01DC9EFB9008161B8 /* SensorFeature.m */,
-				E22FCEB41DC9EDD3008161B8 /* BLESensorSDK.h */,
 				E22FCEB51DC9EDD3008161B8 /* Info.plist */,
 			);
 			path = BLESensorSDK;

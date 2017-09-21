@@ -12,5 +12,7 @@
 
 @property (readonly) NSDictionary* features;
 @property (readonly) BOOL isSensorOn;
+@property (readonly)NSString *firmwareVersion;
 
+- (void)turnOff;
 @end

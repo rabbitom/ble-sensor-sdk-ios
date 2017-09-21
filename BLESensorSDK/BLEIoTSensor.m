@@ -16,7 +16,8 @@
 @interface BLEIoTSensor()
 {
     NSMutableDictionary *features;
-    NSString *firmwareVersion;
+    
+    
     BOOL isSensorOn;
     NSMutableDictionary *settings;
     BOOL isReady;
@@ -218,7 +219,8 @@ static NSArray* _gyroscopeRangeValues;
             [self addFeatureOf:@"GYROSCOPE"];
             [self addFeatureOf:@"MAGNETOMETER"];
         }
-        firmwareVersion = [NSString stringWithCString:(const char*)(bytes+7) encoding:NSASCIIStringEncoding];
+        NSData *Versiondata = [data subdataWithRange:NSMakeRange(17, 3)];
+        _firmwareVersion = [[NSString alloc] initWithData:Versiondata encoding:NSUTF8StringEncoding];
         //set ready
         gotFeatures = YES;
         if((!isReady) && gotSettings) {
@@ -296,6 +298,11 @@ static NSArray* _gyroscopeRangeValues;
 
 - (void)writeControlCommand: (Byte)commandId {
     [self writeData:[NSData dataWithBytes:&commandId length:1] forProperty:CONTROL_POINT];
+}
+
+- (void)turnOff{
+    Byte bytes[] = {0x44,0x55};
+    [self writeData:[NSData dataWithBytes:bytes length:2] forProperty:CONTROL_POINT];
 }
 
 @end
