@@ -12,6 +12,8 @@
 		E22FCED61DC9EFB9008161B8 /* BLEIoTSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FCECE1DC9EFB9008161B8 /* BLEIoTSensor.m */; };
 		E22FCED71DC9EFB9008161B8 /* SensorFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = E22FCECF1DC9EFB9008161B8 /* SensorFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E22FCED81DC9EFB9008161B8 /* SensorFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = E22FCED01DC9EFB9008161B8 /* SensorFeature.m */; };
+		E29045E9263657AD00E15835 /* HolyIoTSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = E29045E8263657AD00E15835 /* HolyIoTSensor.m */; };
+		E29045EC263657C500E15835 /* HolyIoTSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = E29045EB263657C500E15835 /* HolyIoTSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D690AB1F408A29000CFB03 /* BLESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D690AA1F408A29000CFB03 /* BLESDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		E22FCECE1DC9EFB9008161B8 /* BLEIoTSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEIoTSensor.m; sourceTree = "<group>"; };
 		E22FCECF1DC9EFB9008161B8 /* SensorFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorFeature.h; sourceTree = "<group>"; };
 		E22FCED01DC9EFB9008161B8 /* SensorFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorFeature.m; sourceTree = "<group>"; };
+		E29045E8263657AD00E15835 /* HolyIoTSensor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HolyIoTSensor.m; sourceTree = "<group>"; };
+		E29045EB263657C500E15835 /* HolyIoTSensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HolyIoTSensor.h; sourceTree = "<group>"; };
 		E2D690AA1F408A29000CFB03 /* BLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BLESDK.framework; path = "../ble-ios/build/Debug-iphoneos/BLESDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 			children = (
 				E22FCECD1DC9EFB9008161B8 /* BLEIoTSensor.h */,
 				E22FCECE1DC9EFB9008161B8 /* BLEIoTSensor.m */,
+				E29045EB263657C500E15835 /* HolyIoTSensor.h */,
+				E29045E8263657AD00E15835 /* HolyIoTSensor.m */,
 				E22FCEB41DC9EDD3008161B8 /* BLESensorSDK.h */,
 				E22FCECF1DC9EFB9008161B8 /* SensorFeature.h */,
 				E22FCED01DC9EFB9008161B8 /* SensorFeature.m */,
@@ -86,6 +92,7 @@
 				E22FCED51DC9EFB9008161B8 /* BLEIoTSensor.h in Headers */,
 				E22FCED71DC9EFB9008161B8 /* SensorFeature.h in Headers */,
 				E22FCEB61DC9EDD3008161B8 /* BLESensorSDK.h in Headers */,
+				E29045EC263657C500E15835 /* HolyIoTSensor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = E22FCEA71DC9EDD3008161B8;
@@ -157,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29045E9263657AD00E15835 /* HolyIoTSensor.m in Sources */,
 				E22FCED81DC9EFB9008161B8 /* SensorFeature.m in Sources */,
 				E22FCED61DC9EFB9008161B8 /* BLEIoTSensor.m in Sources */,
 			);

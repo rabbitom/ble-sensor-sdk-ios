@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char BLESensorSDKVersionString[];
 
 #import <BLESDK/BLESDK.h>
 #import <BLESensorSDK/BLEIoTSensor.h>
+#import <BLESensorSDK/HolyIoTSensor.h>
 #import <BLESensorSDK/SensorFeature.h>
